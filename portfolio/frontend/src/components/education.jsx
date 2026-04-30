@@ -9,6 +9,8 @@ const Education = () => {
       type: "education",
     },
     {
+
+        
       title: "Software Testing",
       place: "Luminar Technolab, Ernakulam",
       type: "education",
@@ -24,6 +26,9 @@ const Education = () => {
       type: "experience",
     },
   ]
+
+
+
 
   return (
     <section
