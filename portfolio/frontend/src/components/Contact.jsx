@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import { motion } from 'framer-motion'
-import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline'
+import { useState } from 'react'
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
@@ -29,7 +29,7 @@ const Contact = () => {
   return (
 <section
   id="contact"
-className="w-full py-16 sm:py-20 lg:py-24 px-4 sm:px-6 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 border-t border-gray-200 dark:border-gray-800"
+className="min-h-screen flex flex-col justify-center scroll-mt-25    w-full py-16 sm:py-20 lg:py-24 px-4 sm:px-6 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 border-t border-gray-200 dark:border-gray-800"
 >
   <div className="max-w-5xl mx-auto">
 

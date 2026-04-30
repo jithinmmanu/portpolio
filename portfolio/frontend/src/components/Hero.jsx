@@ -19,7 +19,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <section id="home"  className="py-24 pt-25 px-4 sm:px-6 lg:px-8 scroll-mt-10 ">
+    <section id="home" className="min-h-screen flex items-center px-4 sm:px-6 lg:px-8 scroll-mt-20">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 sm:gap-12 items-center w-full">
         <motion.div
           initial={{ opacity: 0, x: -50 }}

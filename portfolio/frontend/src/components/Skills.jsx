@@ -1,6 +1,6 @@
+import { ChartBarIcon, CodeBracketIcon } from '@heroicons/react/24/outline'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { CodeBracketIcon, ChartBarIcon } from '@heroicons/react/24/outline'
 
 const Skills = () => {
   const skills = [
@@ -21,7 +21,7 @@ const Skills = () => {
     <section
   id="skills"
   ref={ref}
-className="w-full pt-30 py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800"
+className=" min-h-screen flex flex-col justify-center scroll-mt-25 w-full  pt-30 py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800"
 >
       <div className="max-w-6xl mx-auto w-full flex flex-col lg:flex-row gap-12 items-start justify-center">
         

@@ -1,12 +1,13 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
 import About from './components/About'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Hero from './components/Hero'
+import Navbar from './components/Navbar'
+import Projects from './components/Projects'
+import Skills from './components/Skills'
+import Education from './components/education'
 
 function App() {
   const [darkMode, setDarkMode] = useState(true)
@@ -41,10 +42,11 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 from-white to-gray-50 transition-all duration-500">
       <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
-      <div className="pt-20 sm:pt-24 md:pt-28 lg:pt-32"></div>
+     
       <main>
         <Hero />
         <About />
+        <Education/>
         <Skills />
         <Projects projects={projects} />
         <Contact />

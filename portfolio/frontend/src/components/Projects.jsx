@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/outline'
 import { motion } from 'framer-motion'
-import { EyeIcon, CodeBracketIcon } from '@heroicons/react/24/outline'
+import { useState } from 'react'
 
 const Projects = ({ projects = [] }) => {
   const [filter, setFilter] = useState('All')
@@ -15,7 +15,7 @@ const Projects = ({ projects = [] }) => {
   return (
     <section
       id="projects"
-className="w-full py-16 sm:py-20 lg:py-24 pt-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800"
+className="min-h-screen flex flex-col justify-center scroll-mt-25   w-full py-16 sm:py-20 lg:py-24 pt-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800"
     >
       <div className="max-w-7xl mt-20 mx-auto">
 
