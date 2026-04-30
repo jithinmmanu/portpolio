@@ -1,17 +1,17 @@
-import { motion } from 'framer-motion'
 import { ArrowLongRightIcon, CheckCircleIcon } from '@heroicons/react/24/outline'
+import { motion } from 'framer-motion'
 
 const About = () => {
   return (
-    <section
-      id="about"
-className="w-full pt-30 py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800"
-    >
+ <section
+  id="about"
+  className="min-h-screen flex items-center scroll-mt-5 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800"
+>
       <div className="max-w-4xl mx-auto text-center space-y-10">
 
         {/* Heading */}
         <div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gray-900 dark:from-white to-gray-500 dark:to-gray-400 bg-clip-text text-transparent leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gray-900 dark:from-white to-gray-500 dark:to-gray-400 bg-clip-text text-transparent leading-tight ">
             About Me
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-full mx-auto mt-4"></div>
@@ -25,7 +25,7 @@ className="w-full pt-30 py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient
         </div>
 
         {/* Features */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 ">
 
           {[{
             icon: <ArrowLongRightIcon className="w-5 h-5 text-white" />,
