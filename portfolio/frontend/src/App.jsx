@@ -33,9 +33,65 @@ function App() {
     try {
       const res = await fetch('/api/projects')
       const data = await res.json()
-      setProjects(data)
+
+      // Frontend-only extra projects (Play Store links)
+      const playStoreProjects = [
+        {
+          title: 'Buyit',
+          description: 'A mobile app to simplify purchasing and stay updated with your buys.',
+          url: 'https://play.google.com/store/apps/details?id=com.buyitltd.buyit',
+          category: 'Mobile App',
+          technologies: ['Mobile App']
+        },
+        {
+          title: 'Reachout',
+          description: 'A mobile app designed for smooth corporate outreach and communication.',
+          url: 'https://play.google.com/store/apps/details?id=com.reachoutAlpha.corporatemobile',
+          category: 'Mobile App',
+          technologies: ['Mobile App']
+        },
+        {
+          title: 'Rigging calculator',
+          description: 'A mobile app to help you calculate rigging requirements quickly and accurately.',
+          url: 'https://play.google.com/store/apps/details?id=com.org.leoRiggingCalculator',
+          category: 'Mobile App',
+          technologies: ['Mobile App']
+        }
+      ]
+
+      setProjects([...(Array.isArray(data) ? data : []), ...playStoreProjects])
     } catch (err) {
       console.log('No backend yet:', err)
+
+      // Still render frontend-only projects even if backend is down
+      setProjects([
+        {
+          title: 'Buyit',
+          description: 'A mobile app to simplify purchasing and stay updated with your buys.',
+          image:
+            'https://images.unsplash.com/photo-1556742049-0cfed7f8a5f6?w=500&fit=crop',
+          url: 'https://play.google.com/store/apps/details?id=com.buyitltd.buyit',
+          category: 'Mobile App',
+          technologies: ['Mobile App']
+        },
+        {
+          title: 'Reachout',
+          description: 'A mobile app designed for smooth corporate outreach and communication.',
+
+          url: 'https://play.google.com/store/apps/details?id=com.reachoutAlpha.corporatemobile',
+          category: 'Mobile App',
+          technologies: ['Mobile App']
+        },
+        {
+          title: 'Rigging calculator',
+          description: 'A mobile app to help you calculate rigging requirements quickly and accurately.',
+          image:
+            'https://images.unsplash.com/photo-1604881991238-4b4c4b8a7e0c?w=500&fit=crop',
+          url: 'https://play.google.com/store/apps/details?id=com.org.leoRiggingCalculator',
+          category: 'Mobile App',
+          technologies: ['Mobile App']
+        }
+      ])
     }
   }
 
