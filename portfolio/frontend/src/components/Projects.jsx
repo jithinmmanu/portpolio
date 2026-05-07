@@ -120,9 +120,13 @@ const Projects = ({ projects = [] }) => {
                   </div>
 
                 </div>
+
+                
               </motion.div>
             ))
           ) : (
+
+
             <div className="col-span-full text-center py-16">
               <p className="text-gray-500 dark:text-gray-400">
                 No projects found in this category.
